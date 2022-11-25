@@ -1,0 +1,3 @@
+resources:
+ - bookinfo-gateway.yaml
+ - destination-rule-all.yaml

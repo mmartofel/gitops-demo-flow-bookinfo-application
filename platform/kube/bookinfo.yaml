@@ -313,6 +313,7 @@ metadata:
   labels:
     app: productpage
     version: v1
+    app.openshift.io/runtime: python
 spec:
   replicas: 1
   selector:
