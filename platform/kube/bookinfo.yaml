@@ -110,6 +110,7 @@ metadata:
   labels:
     app: ratings
     version: v1
+    app.openshift.io/runtime: nodejs
 spec:
   replicas: 1
   selector:
@@ -163,6 +164,7 @@ metadata:
   labels:
     app: reviews
     version: v1
+    app.openshift.io/runtime: java
 spec:
   replicas: 1
   selector:
@@ -205,6 +207,7 @@ metadata:
   labels:
     app: reviews
     version: v2
+    app.openshift.io/runtime: java
 spec:
   replicas: 1
   selector:
@@ -247,6 +250,7 @@ metadata:
   labels:
     app: reviews
     version: v3
+    app.openshift.io/runtime: java
 spec:
   replicas: 1
   selector:
