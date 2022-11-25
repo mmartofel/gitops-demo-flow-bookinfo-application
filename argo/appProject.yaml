@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: bookinfo
+  namespace: dev
+spec:
+  clusterResourceWhitelist:
+    - group: '*'
+      kind: '*'
+  description: Application project to host BOOKINFO application
+  destinations:
+    - name: '*'
+      namespace: '*'
+      server: '*'
+  sourceRepos:
+    - '*'

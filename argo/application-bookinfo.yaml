@@ -1,0 +1,13 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: bookinfo-app
+spec:
+  project: bookinfo
+  source:
+    repoURL: 'https://github.com/mmartofel/gitops-demo-flow-bookinfo-application'
+    path: platform/kube
+    targetRevision: HEAD
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: dev
