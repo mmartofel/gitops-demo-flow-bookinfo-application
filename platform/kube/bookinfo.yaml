@@ -319,6 +319,7 @@ metadata:
     app: productpage
     version: v1
     app.openshift.io/runtime: python
+    app.kubernetes.io/part-of: FRONTEND
 spec:
   replicas: 1
   selector:
