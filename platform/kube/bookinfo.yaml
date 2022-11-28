@@ -58,6 +58,7 @@ metadata:
     app: details
     version: v1
     app.openshift.io/runtime: ruby
+    app.kubernetes.io/part-of: DETAILS-API
 spec:
   replicas: 1
   selector:
@@ -112,6 +113,7 @@ metadata:
     app: ratings
     version: v1
     app.openshift.io/runtime: nodejs
+    app.kubernetes.io/part-of: RATING-API
 spec:
   replicas: 1
   selector:
@@ -166,6 +168,7 @@ metadata:
     app: reviews
     version: v1
     app.openshift.io/runtime: java
+    app.kubernetes.io/part-of: RATING-API
 spec:
   replicas: 1
   selector:
@@ -209,6 +212,7 @@ metadata:
     app: reviews
     version: v2
     app.openshift.io/runtime: java
+    app.kubernetes.io/part-of: RATING-API
 spec:
   replicas: 1
   selector:
@@ -252,6 +256,7 @@ metadata:
     app: reviews
     version: v3
     app.openshift.io/runtime: java
+    app.kubernetes.io/part-of: RATING-API
 spec:
   replicas: 1
   selector:
@@ -319,7 +324,7 @@ metadata:
     app: productpage
     version: v1
     app.openshift.io/runtime: python
-    app.kubernetes.io/part-of: FRONTEND
+    app.kubernetes.io/part-of: PRODUCTPAGE
 spec:
   replicas: 1
   selector:
