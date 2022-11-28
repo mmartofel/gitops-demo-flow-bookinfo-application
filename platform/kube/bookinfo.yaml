@@ -168,7 +168,7 @@ metadata:
     app: reviews
     version: v1
     app.openshift.io/runtime: java
-    app.kubernetes.io/part-of: RATING-API
+    app.kubernetes.io/part-of: REVIEWS-API
 spec:
   replicas: 1
   selector:
@@ -212,7 +212,7 @@ metadata:
     app: reviews
     version: v2
     app.openshift.io/runtime: java
-    app.kubernetes.io/part-of: RATING-API
+    app.kubernetes.io/part-of: REVIEWS-API
 spec:
   replicas: 1
   selector:
@@ -256,7 +256,7 @@ metadata:
     app: reviews
     version: v3
     app.openshift.io/runtime: java
-    app.kubernetes.io/part-of: RATING-API
+    app.kubernetes.io/part-of: REVIEWS-API
 spec:
   replicas: 1
   selector:
