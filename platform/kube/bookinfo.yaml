@@ -320,6 +320,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: productpage-v1
+  annotations:
+    app.openshift.io/connects-to: 'details-v1'
+    app.openshift.io/vcs-uri: 'https://github.com/mmartofel/gitops-demo-flow-bookinfo-application'
   labels:
     app: productpage
     version: v1
