@@ -164,6 +164,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: reviews-v1
+  annotations:
+    app.openshift.io/connects-to: 'ratings-v1'
+    app.openshift.io/vcs-uri: 'https://github.com/mmartofel/gitops-demo-flow-bookinfo-application'
   labels:
     app: reviews
     version: v1
@@ -208,6 +211,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: reviews-v2
+  annotations:
+    app.openshift.io/connects-to: 'ratings-v1'
+    app.openshift.io/vcs-uri: 'https://github.com/mmartofel/gitops-demo-flow-bookinfo-application'
   labels:
     app: reviews
     version: v2
@@ -252,6 +258,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: reviews-v3
+  annotations:
+    app.openshift.io/connects-to: 'ratings-v1'
+    app.openshift.io/vcs-uri: 'https://github.com/mmartofel/gitops-demo-flow-bookinfo-application'
   labels:
     app: reviews
     version: v3
